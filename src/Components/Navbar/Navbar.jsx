@@ -65,8 +65,8 @@ export default function Navbar({ logOut, userData }) {
                       <Link className="dropdown-item btn btn-light" to="addcart">User Cart</Link>
                     </li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li className="dropdown-item">
-                      <button onClick={logOut} className="btn btn-danger w-100 cursor-pointer" >LogOut</button>
+                    <li className="">
+                      <Link onClick={logOut} className="btn dropdown-item bg-danger text-white w-100 cursor-pointer" >LogOut</Link>
                     </li>
                   </ul>
                 </li>
