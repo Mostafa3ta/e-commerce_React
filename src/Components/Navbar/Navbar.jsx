@@ -66,7 +66,7 @@ export default function Navbar({ logOut, userData }) {
                     </li>
                     <li><hr className="dropdown-divider" /></li>
                     <li className="">
-                      <Link onClick={logOut} className="btn dropdown-item bg-danger text-white w-100 cursor-pointer" >LogOut</Link>
+                      <div onClick={logOut} className="dropdown-item bg-danger text-white w-100 cursor-pointer" >LogOut</div>
                     </li>
                   </ul>
                 </li>

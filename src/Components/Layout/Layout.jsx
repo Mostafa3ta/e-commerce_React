@@ -14,7 +14,6 @@ export default function Layout({ userData, setuserData }) {
     localStorage.removeItem('dataToken')
     localStorage.removeItem('newCart')
     localStorage.removeItem('CartCount')
-    // setuserData(null)
     navigate('/login')
   }
 
