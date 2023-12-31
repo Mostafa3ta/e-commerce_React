@@ -24,6 +24,28 @@ export default function CategorySlider() {
 
   }, [])
 
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black", borderRadius: "50%" }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black", borderRadius: "50%" }}
+        onClick={onClick}
+      />
+    );
+  }
+
   const settings = {
     dots: true,
     infinite: true,
@@ -33,7 +55,9 @@ export default function CategorySlider() {
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
-    swipeToSlide: true, 
+    swipeToSlide: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -41,7 +65,7 @@ export default function CategorySlider() {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
@@ -49,14 +73,20 @@ export default function CategorySlider() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2
+          initialSlide: 2,
+          dots: false,
+          nextArrow: false,
+          prevArrow: false,
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: false,
+          nextArrow: false,
+          prevArrow: false,
         }
       }
     ]
