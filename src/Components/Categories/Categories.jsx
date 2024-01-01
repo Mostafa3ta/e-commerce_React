@@ -43,7 +43,7 @@ export default function Categories() {
 
       <div className="row m-4 mt-4 justify-content-center text-center">
         {Categories.map((Category) =>
-          <div className="col-md-4  col-lg-3 product m-2 rounded-4 py-1 cursor-pointer">
+          <div className="col-md-4  col-lg-3 product m-2 rounded-3 py-1 cursor-pointer">
             <Link to={`/categorydetails/${Category}`}>
               <h2 className='h5 tw-bold main'>{Category}</h2>
             </Link>

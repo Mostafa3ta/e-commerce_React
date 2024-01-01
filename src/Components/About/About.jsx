@@ -25,15 +25,19 @@ export default function About() {
       <div>
         <h3 className='text-success my-3 fw-bold'>About Login :</h3 >
         <div className='h5'>you cannot signup new user into the server it is just simulate the request and the response is
-          in the (console), And that's why there's a given username and password belongs to a user stored in 
+          in the (console), And that's why there's a given username and password belongs to a user stored in
           the database and when you login it respondes with a Token that you cannot access the wepsite without it .
         </div>
       </div>
       <hr />
-      {/* <div className='my-3'>
-        <h3 className='h5 text-success fw-bold'>Used API :</h3 >
-        <Link to="https://dummyjson.com/" target='_blank' ><h4 className='px-2 h6 fw-bolder'>dummyjson.com</h4></Link>
-      </div> */}
+      <div>
+        <h3 className='text-success my-3 fw-bold'>About Products :</h3 >
+        <div className='h5'> The products images from the API are all different in Size which
+          ruins the whole User Experience ,So I had to give them a fixed height thats why some
+          pictures looks little stretched
+        </div>
+      </div>
+      <hr />
     </div>
 
   </>

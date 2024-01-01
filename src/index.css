@@ -54,7 +54,7 @@ a:hover {
 
 .nav-item a:hover {
   box-shadow: var(--shadow);
-  border-radius: 1rem;
+  border-radius: .5rem;
   color: var(--main-color);
   font-size: 1.06rem;
 }

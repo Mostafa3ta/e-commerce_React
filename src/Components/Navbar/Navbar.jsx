@@ -15,22 +15,22 @@ export default function Navbar({ logOut, userData }) {
         </button>
         <div className="collapse navbar-collapse" id="collapsibleNavId">
           {localStorage.getItem('dataToken') !== null ? <ul className="navbar-nav text-center ms-4 ">
-            <li className="nav-item">
+            <li className="nav-item p-1">
               <Link className="nav-link" to="/">Home</Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item p-1">
               <Link className="nav-link" to="products">Products</Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item p-1">
               <Link className="nav-link" to="categories">Categories</Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item p-1">
               <Link className="nav-link" to="searchproduct"><i class="fa-solid fa-magnifying-glass px-1"></i>Search</Link>
             </li>
-            <li className="nav-item ">
-              <Link className="nav-link" to="about">About Us</Link>
+            <li className="nav-item p-1 ">
+              <Link className="nav-link" to="about">About</Link>
             </li>
-            <li className="nav-item ">
+            <li className="nav-item p-1 ">
               {localStorage.getItem('dataToken') != null ?
                 <Link className="nav-link" to="cart">
                   <div className=' text-center '>

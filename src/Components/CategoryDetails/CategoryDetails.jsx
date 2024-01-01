@@ -65,7 +65,7 @@ export default function CategoryDetails() {
       <div className="row my-3 mt-4">
         <h2 className='fw-bolder text-success mt-4'>{`${ParamsCategory}`} :</h2>
         {CategoryDetails.map((product) => <div key={product.id} className="cursor-pointer col-md-4 col-6 col-lg-3 col-xl-2">
-          <div className="my-2 py-3 product rounded-4 px-2 ">
+          <div className="my-2 py-3 product rounded-2 px-2 ">
             <Link to={`/productdetails/${product.id}`}>
               <img src={product.thumbnail} className='w-100' height={110} alt="" />
               <span className='text-success font-sm'>{product.category}</span>

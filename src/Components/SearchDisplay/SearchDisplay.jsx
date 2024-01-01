@@ -78,7 +78,7 @@ export default function SearchDisplay() {
       </div>
       {NewCategories.length > 0 ? <h2 className='fw-bolder text-success py-4'>Categories :</h2> : null}
       {NewCategories.map((Category) =>
-        <div className="col-md-3 rounded-4 m-2 col-5 product py-2 cursor-pointer">
+        <div className="col-md-3 rounded-3 m-2 col-5 product py-2 cursor-pointer">
           <Link to={`/categorydetails/${Category}`}>
             <h2 className='h5 tw-bold main'>{Category}</h2>
           </Link>
@@ -87,7 +87,7 @@ export default function SearchDisplay() {
 
       {NewProducts.length > 0 ? <h2 className='fw-bolder text-success py-4'>Products :</h2> : null}
       {NewProducts?.map((product) => <div key={product.id} className="cursor-pointer col-md-4 col-6 col-lg-3 col-xl-2">
-        <div className="py-3 my-3 rounded-4 product px-2 ">
+        <div className="py-3 my-3 rounded-3 product px-2 ">
           <Link to={`/productdetails/${product.id}`}>
             <img src={product.thumbnail} className='w-100' height={110} alt="" />
             <span className='text-success font-sm'>{product.category}</span>

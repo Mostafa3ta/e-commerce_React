@@ -97,7 +97,7 @@ export default function AddCart() {
 
     </>}
     <div className='col-md-4 h5 d-flex text-danger'>Please Read :
-      <Link to="../about" ><h4 className='px-2 h5 fw-bolder '>About Us</h4></Link>
+      <Link to="../about" ><h4 className='px-2 h5 fw-bolder '>About</h4></Link>
     </div>
   </>
 }
