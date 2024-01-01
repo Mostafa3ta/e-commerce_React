@@ -32,7 +32,7 @@ export default function About() {
       <hr />
       <div>
         <h3 className='text-success my-3 fw-bold'>About Products :</h3 >
-        <div className='h5'> The products images from the API are all different in Size which
+        <div className='h5'> The products images from the API are all different in width and height which
           ruins the whole User Experience ,So I had to give them a fixed height thats why some
           pictures looks little stretched
         </div>
