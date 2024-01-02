@@ -72,7 +72,7 @@ export default function SearchDisplay() {
       <title>Search</title>
     </Helmet>
 
-    <div className="row my-3 mt-4">
+    <div className="row my-3 align-items-center mt-4">
       <div className="d-flex justify-content-center">
         <input className="form-control m-4 px-4 w-50 border-success rounded-5 " onChange={(e) => handleChang(e.target.value)} value={SearchValue} type="search" placeholder="Search Products & Categories" aria-label="Search" />
       </div>

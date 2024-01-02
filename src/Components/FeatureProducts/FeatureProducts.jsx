@@ -51,7 +51,7 @@ export default function FeatureProducts() {
       </div>
     </section> :
 
-      <div className="row my-3 bg-light rounded-3">
+      <div className="row align-items-center my-3 bg-light rounded-3">
         {products.map((product) => <div key={product.id} className="cursor-pointer col-md-4 col-6 col-lg-3 col-xl-2">
           <div className="my-3 py-3 product px-2 rounded-3 ">
             <Link to={`/productdetails/${product.id}`}>
